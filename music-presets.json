@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Regular Music",
+    "payload": {
+      "type": "visualizer",
+      "filter": "classic"
+    }
+  },
+  {
+    "name": "Faded Music",
+    "payload": {
+      "type": "visualizer",
+      "filter": "smooth"
+    }
+  }
+]
