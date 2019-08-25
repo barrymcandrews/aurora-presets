@@ -1,920 +1,1095 @@
 [
   {
     "name": "RGB Blink",
-    "payload": {
-      "type": "sequence",
-      "sequence": [
-        {
-          "type": "levels",
+    "type": "sequence",
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 100,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 0,
           "blue": 100
         }
-      ],
-      "delay": 1
-    }
+      }
+    ],
+    "delay": 1
   },
   {
     "name": "RGB Fade",
-    "payload": {
-      "type": "fade",
-      "levels": [
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 0,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 0,
-          "green": 100,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 0,
-          "green": 0,
-          "blue": 100
-        },
-        {
-          "type": "levels",
+    "type": "fade",
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
         }
-      ],
-      "delay": 5
-    }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 100,
+          "blue": 0
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 0,
+          "blue": 100
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 0,
+          "blue": 0
+        }
+      }
+    ],
+    "delay": 5
   },
   {
     "name": "Police",
-    "payload": {
-      "type": "sequence",
-      "delay":0.25,
-      "sequence":[
-        {
-          "type":"sequence",
-          "repeats":3,
-          "delay":0.0625,
-          "sequence":[
-            {
-              "type":"levels",
-              "red":100,
-              "green":0,
-              "blue":0
-            },
-            {
-              "type":"levels",
-              "red":0,
-              "green":0,
-              "blue":0
+    "type": "sequence",
+    "delay": 0.25,
+    "children": [
+      {
+        "type": "sequence",
+        "repeats": 3,
+        "delay": 0.0625,
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
             }
-          ]
-        },
-        {
-          "type":"levels",
-          "red":100,
-          "green":0,
-          "blue":0
-        },
-        {
-          "type":"sequence",
-          "repeats":3,
-          "delay":0.0625,
-          "sequence":[
-            {
-              "type":"levels",
-              "red":0,
-              "green":0,
-              "blue":0
-            },
-            {
-              "type":"levels",
-              "red":0,
-              "green":0,
-              "blue":100
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
             }
-          ]
-        },
-        {
-          "type":"levels",
-          "red":0,
-          "green":0,
-          "blue":100
+          }
+        ]
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 0,
+          "blue": 0
         }
-      ]
-    }
+      },
+      {
+        "type": "sequence",
+        "repeats": 3,
+        "delay": 0.0625,
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 100
+            }
+          }
+        ]
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 0,
+          "blue": 100
+        }
+      }
+    ]
   },
   {
     "name": "Rainbow",
-    "payload": {
-      "type": "fade",
-      "delay": 2,
-      "levels": [
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 0,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 100,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 0,
-          "green": 100,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 0,
-          "green": 100,
-          "blue": 100
-        },
-        {
-          "type": "levels",
-          "red": 0,
-          "green": 0,
-          "blue": 100
-        },
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 0,
-          "blue": 100
-        },
-        {
-          "type": "levels",
+    "type": "fade",
+    "delay": 2,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
         }
-      ]
-    }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 100,
+          "blue": 0
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 100,
+          "blue": 0
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 100,
+          "blue": 100
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 0,
+          "green": 0,
+          "blue": 100
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 0,
+          "blue": 100
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 0,
+          "blue": 0
+        }
+      }
+    ]
   },
   {
     "name": "Sunset",
-    "payload":{
-      "type": "fade",
-      "delay": 2,
-      "levels": [
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 20,
-          "blue": 0
-        },
-        {
-          "type": "levels",
-          "red": 100,
-          "green": 0,
-          "blue": 0
-        },
-        {
-          "type": "levels",
+    "type": "fade",
+    "delay": 2,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 20,
           "blue": 0
         }
-      ]
-    }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 0,
+          "blue": 0
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
+          "red": 100,
+          "green": 20,
+          "blue": 0
+        }
+      }
+    ]
   },
   {
     "name": "Pitt",
-    "payload":{
-      "type": "sequence",
-      "delay": 1,
-      "sequence": [
-        {
-          "type": "levels",
+    "type": "sequence",
+    "delay": 1,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 0,
           "blue": 100
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 25,
           "blue": 0
         }
-      ]
-    }
-    },
+      }
+    ]
+  },
   {
     "name": "Strobe",
-    "payload":{
-      "type": "sequence",
-      "delay": 0.0625,
-      "sequence": [
-        {
-          "type": "levels",
+    "type": "sequence",
+    "delay": 0.0625,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 100,
           "blue": 100
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 0,
           "blue": 0
         }
-      ]
-    }
+      }
+    ]
   },
   {
     "name": "Acid Trip",
-    "payload": {
-      "type": "sequence",
-      "delay": 0.1,
-      "sequence": [
-        {
-          "type": "levels",
+    "type": "sequence",
+    "delay": 0.1,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 100,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 0,
           "blue": 100
         }
-      ]
-    }
+      }
+    ]
   },
   {
     "name": "cyclone",
-    "payload":{
-      "type": "fade",
-      "delay": 0.25,
-      "levels": [
-        {
-          "type": "levels",
+    "type": "fade",
+    "delay": 0.25,
+    "children": [
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 100,
           "blue": 0
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 0,
           "green": 0,
           "blue": 100
-        },
-        {
-          "type": "levels",
+        }
+      },
+      {
+        "type": "levels",
+        "levels": {
           "red": 100,
           "green": 0,
           "blue": 0
         }
-      ]
-    }
+      }
+    ]
   },
   {
     "name": "Red Flicker",
-    "payload": {
-      "type": "sequence",
-      "sequence": [
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+    "type": "sequence",
+    "children": [
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 30
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 0.0125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 30
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.25
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 3
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 30
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 3
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 3
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 30
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 0.0125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.0125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.25
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.25
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 3
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 30
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 3
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
-              "blue": 3
-            },
-            {
-              "type": "levels",
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 30
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          }
+        ],
+        "delay": 0.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 3
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 3
-            }
-          ],
-          "delay": 0.75
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        }
-      ],
-      "delay": 1
-    }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 3
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 30
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.0125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.25
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 3
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 30
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "red": 100,
+            "green": 0,
+            "blue": 3
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 3
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 3
+            }
+          }
+        ],
+        "delay": 0.75
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      }
+    ],
+    "delay": 1
   },
-
   {
     "name": "Blue Flicker",
-    "payload": {
-      "type": "sequence",
-      "sequence": [
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+    "type": "sequence",
+    "children": [
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 100
             }
-          ],
-          "delay": 29.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 0.0125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 29.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.25
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.0125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.25
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 3
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 3
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 100
             }
-          ],
-          "delay": 29.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 29.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 100
             }
-          ],
-          "delay": 29.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 0
-            }
-          ],
-          "delay": 0.0125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 29.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.25
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 0.0125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.25
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 3
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 3
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 100
             }
-          ],
-          "delay": 29.5
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          }
+        ],
+        "delay": 29.5
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
-            },
-            {
-              "type": "levels",
+            }
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 100,
               "green": 0,
               "blue": 3
-            },
-            {
-              "type": "levels",
-              "red": 0,
-              "green": 0,
-              "blue": 0
-            },
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 3
             }
-          ],
-          "delay": 0.125
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
-              "red": 100,
-              "green": 0,
-              "blue": 3
-            }
-          ],
-          "delay": 0.75
-        },
-        {
-          "type": "sequence",
-          "sequence": [
-            {
-              "type": "levels",
+          },
+          {
+            "type": "levels",
+            "levels": {
               "red": 0,
               "green": 0,
               "blue": 0
             }
-          ],
-          "delay": 0.125
-        }
-      ],
-      "delay": 1
-    }
+          },
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 3
+            }
+          }
+        ],
+        "delay": 0.125
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 100,
+              "green": 0,
+              "blue": 3
+            }
+          }
+        ],
+        "delay": 0.75
+      },
+      {
+        "type": "sequence",
+        "children": [
+          {
+            "type": "levels",
+            "levels": {
+              "red": 0,
+              "green": 0,
+              "blue": 0
+            }
+          }
+        ],
+        "delay": 0.125
+      }
+    ],
+    "delay": 1
   }
 ]

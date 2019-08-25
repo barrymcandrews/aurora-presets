@@ -1,110 +1,171 @@
 [
   {
-    "name": "Red",
-    "payload": {
-      "type": "levels",
-      "red": 100,
-      "green": 0,
-      "blue": 0
-    }
-  },
-  {
-    "name": "Blue",
-    "payload": {
-      "type": "levels",
+    "name": "Off",
+    "type": "levels",
+    "levels": {
       "red": 0,
       "green": 0,
-      "blue": 100
+      "blue": 0
+    },
+    "ui": {
+      "color": "#000000",
+      "flatColor": "#484848"
     }
   },
   {
-    "name": "Orange",
-    "payload": {
-      "type": "levels",
+    "name": "Red",
+    "type": "levels",
+    "levels": {
       "red": 100,
-      "green": 10,
+      "green": 0,
       "blue": 0
-    }
-  },
-  {
-    "name": "Yellow",
-    "payload": {
-      "type": "levels",
-      "red": 100,
-      "green": 50,
-      "blue": 0
+    },
+    "ui": {
+      "color": "#FF0000",
+      "flatColor": "#E15554"
     }
   },
   {
     "name": "Green",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 0,
       "green": 100,
       "blue": 0
+    },
+    "ui": {
+      "color": "#00FF00",
+      "flatColor": "#39CA74"
+    }
+  },
+  {
+    "name": "Blue",
+    "type": "levels",
+    "levels": {
+      "red": 0,
+      "green": 0,
+      "blue": 100
+    },
+    "ui": {
+      "color": "#0000FF",
+      "flatColor": "#4D9DE0"
     }
   },
   {
     "name": "White",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 100,
       "green": 100,
       "blue": 100
+    },
+    "ui": {
+      "color": "#FFFFFF",
+      "flatColor": "#FFFFFF"
     }
   },
   {
     "name": "Purple",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 100,
       "green": 0,
       "blue": 100
+    },
+    "ui": {
+      "color": "#8A2BE2",
+      "flatColor": "#6857D3"
+    }
+  },
+  {
+    "name": "Yellow",
+    "type": "levels",
+    "levels": {
+      "red": 100,
+      "green": 50,
+      "blue": 0
+    },
+    "ui": {
+      "color": "#00FFFF",
+      "flatColor": "#F9C80E"
+    }
+  },
+  {
+    "name": "Orange",
+    "type": "levels",
+    "levels": {
+      "red": 100,
+      "green": 10,
+      "blue": 0
+    },
+    "ui": {
+      "color": "#FF8C00",
+      "flatColor": "#EA7A48"
     }
   },
   {
     "name": "Pink",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 100,
       "green": 0,
       "blue": 10
+    },
+    "ui": {
+      "color": "#FF69B4",
+      "flatColor": "#E24B8B"
     }
   },
   {
     "name": "Lime",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 100,
       "green": 100,
       "blue": 0
+    },
+    "ui": {
+      "color": "#32cd32",
+      "flatColor": "#32cd32"
     }
   },
   {
     "name": "Dim Blue",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 0,
       "green": 0,
       "blue": 10
+    },
+    "ui": {
+      "color": "#00008b",
+      "flatColor": "#00008b"
     }
   },
   {
     "name": "Dim Red",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 10,
       "green": 0,
       "blue": 0
+    },
+    "ui": {
+      "color": "#8B0000",
+      "flatColor": "#8B0000"
     }
   },
   {
     "name": "Dim White",
-    "payload": {
-      "type": "levels",
+    "type": "levels",
+    "levels": {
       "red": 5,
       "green": 5,
       "blue": 5
+    },
+    "ui": {
+      "color": "#808080",
+      "flatColor": "#808080"
     }
   }
 ]

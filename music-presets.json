@@ -1,15 +1,15 @@
 [
   {
     "name": "Regular Music",
-    "payload": {
-      "type": "visualizer",
+    "type": "visualizer",
+    "visualizer": {
       "filter": "classic"
     }
   },
   {
     "name": "Faded Music",
-    "payload": {
-      "type": "visualizer",
+    "type": "visualizer",
+    "visualizer": {
       "filter": "smooth"
     }
   }
